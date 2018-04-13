@@ -7,6 +7,6 @@
     "KINDLY_API_KEY": {
       "description": "Your Kindly bot API key. Get it by creating an Application from the Connect page.",
       "required": true
-    },
+    }
   }
 }
