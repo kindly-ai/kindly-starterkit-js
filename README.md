@@ -6,9 +6,7 @@ Build your first chatbot integration using the Kindly&trade; platform.
 
 The fastest way to get started is to deploy this repo using Heroku.
 
-Hit the button below to start the deployment. If you don't already have an account, you'll be prompted to create one.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/convertelligence/kindly-starterkit-js/tree/master)
+Hit this button [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/convertelligence/kindly-starterkit-js/tree/master) to start the deployment. If you don't already have an account, you'll be prompted to create one.
 
 You'll be asked to give the Heroku application a name, select a region (US or Europe) and enter a `KINDLY_API_KEY`.
 
