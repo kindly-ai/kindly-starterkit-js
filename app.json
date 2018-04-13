@@ -5,7 +5,7 @@
   "keywords": ["kindly", "convertelligence", "node"],
   "env": {
     "KINDLY_API_KEY": {
-      "description": "Your Kindly bot API key. Get it by creating an Application from the Connect page. Not required if you only want webhooks without App integrations.",
+      "description": "Not a requirement unless you want to build custom apps that integrates with Kindly, such as an SMS bot or IoT device. Get an API key by creating an Application from the Connect page.",
       "required": false
     }
   },
