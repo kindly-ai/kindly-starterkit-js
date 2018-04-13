@@ -18,15 +18,26 @@ Once the deployment is done, click View app. Copy the URL from the web page and 
 
 :tada: Congratulations! You've integrated your first chatbot! :sparkles:
 
-Now for the fun part. Come up with an integration idea. [Check out this list](https://github.com/abhishekbanthia/Public-APIs) for tips! :runner:
+## Getting started with local development
+
+Now for the fun part: Come up with an integration idea! [Check out this list](https://github.com/abhishekbanthia/Public-APIs) for tips! :runner:
 
 :bulb: Once you've found the perfect idea for a bot integration, you can clone the source code from your newly created Heroku app by running the following command:
 
 `heroku git:clone -a myapp`
 
+Replace myapp with the name of your Heroku application.
+
 This will create a local directory `myapp` that you can use for further development and testing, as well as add a git remote named `heroku` that you can use to push updates to the live Heroku app.
 
-## Getting started with local development (for non-Heroku users)
+Go to the new directory and start the application locally:
+
+```
+cd myapp
+heroku local
+```
+
+## Getting started for non-Heroku users
 
 Open your terminal and run the following commands:
 
