@@ -68,17 +68,3 @@ npm start
 
 :tada: If everything went smoothly, you should have a microserver running at
 [http://localhost:9292](http://localhost:9292) that you can use for further testing.
-
-### Using ngrok to develop locally
-
-TODO: write about ngrok
-
-## Building webhook integrations
-
-Check out `src/index.js` in your preferred code editor or IDE.
-
-TODO: write about webhook integrations
-
-## Building app integrations
-
-TODO: write about app integrations
