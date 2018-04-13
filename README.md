@@ -22,7 +22,7 @@ You're going to need an API key from Kindly to complete the deployment.
 
 #### Test your live integration
 
-Once the deployment process is done, click on "View app". Copy the URL and paste it into a dialogue webhook url. 
+Once the deployment process is done, click on "View app". Copy the URL and paste it into a dialogue webhook url.
 
 ## Getting started with local development
 
