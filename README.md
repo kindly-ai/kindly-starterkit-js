@@ -8,7 +8,7 @@ The fastest way to get started is to just deploy it to Heroku and watch the magi
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-## Getting started with the server
+## Getting started with local development
 
 Open your UNIX terminal and run the following commands
 
@@ -18,7 +18,15 @@ cd kindly-starterkit-js
 cp .env.default .env
 ```
 
+### Set your Kindly API key
+
 Before you continue, open up the `.env` file in your editor.
+
+Set the `KINDLY_API_KEY` value to the API key from your Kindly Application.
+
+Now continue:
+
+```
 npm install
 npm start
 ```
