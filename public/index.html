@@ -2,7 +2,9 @@
   <head>
     <style type="text/css">
       body {
-        background: #293846;
+        background-image: url('https://kindly-dev1.s3.amazonaws.com/static/css/patterns/header-profile.png');
+        background-color: #293846;
+        background-size: cover;
         color: #ffffff;
         font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 20px;
@@ -19,6 +21,8 @@
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center;
+        width: 70%;
+        max-width: 800px;
       }
       .welcome h1 {
         font-weight: 100;
@@ -28,14 +32,13 @@
         margin-bottom: 40px;
       }
       .welcome input {
-        font-size: 35px;
+        font-size: 20px;
         text-align: center;
-        border: 3px solid #293846;
         background: rgba(0, 0, 0, 0.5);
-        width: 900px;
+        width: 70%;
         color: #fff;
         outline: none;
-        border: 1px solid #fff;
+        border: 5px solid rgba(0, 0, 0, 0.9);
         padding: 10px;
         margin-bottom: 100px;
       }
@@ -43,7 +46,7 @@
   </head>
   <body>
     <div class="welcome">
-      <h1>Your Kindly integration is ready!</h1>
+      <h1>Your Kindly bot integration is ready!</h1>
       <div class="description">
         Paste the URL below into a dialogue Webhook URL to see that it works:
       </div>
