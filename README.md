@@ -66,5 +66,4 @@ npm install
 npm start
 ```
 
-:tada: If everything went smoothly, you should have a microserver running at
-[http://localhost:9292](http://localhost:9292) that you can use for further testing.
+:tada: If everything went smoothly, you should have a webserver running at [http://localhost:9292](http://localhost:9292) that you can use for further development.
