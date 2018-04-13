@@ -41,6 +41,8 @@ Now start `ngrok` so you can tunnel requests from Kindly to your local app. That
 
 `ngrok http 9292`
 
+This will give you an ngrok URL that you can use for Kindly webhooks.
+
 ## Getting started for non-Heroku users
 
 Open your terminal and run the following commands:
