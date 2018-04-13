@@ -18,7 +18,7 @@ Once the deployment is done, click View app. Copy the URL from the web page and 
 
 :tada: Congratulations! You've integrated your first chatbot! :sparkles:
 
-Now [go find an API](https://github.com/abhishekbanthia/Public-APIs) to integrate.
+Now [go find an API](https://github.com/abhishekbanthia/Public-APIs) to integrate! :runner:
 
 ## Getting started with local development
 
