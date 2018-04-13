@@ -14,9 +14,9 @@ You're going to need an API key from Kindly to complete the deployment.
 
 Go to the [Kindly platform](https://platform.convertelligence.com). Navigate to your bot. Go to Connect. If you haven't already created an Application, do it now. Now go to the Application you created. Press "Show API key" and copy-paste the API into the `KINDLY_API_KEY` field.
 
-Once the deployment is done, click View app.
+Once the deployment is done, click View app. Copy the URL from the web page and paste it into a dialogue webhook url. Now try to make your chatbot trigger the dialogue by testing it from the platform.
 
-Copy the URL and paste it into a dialogue webhook url.
+:tada: Congratulations! You've now integrated your first chatbot with a third-party service! Now [go find an API to integrate](https://github.com/abhishekbanthia/Public-APIs).
 
 ## Getting started with local development
 
