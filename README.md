@@ -1,12 +1,24 @@
 # Kindly Starter Kit for Javascript
 
-Build your first webhook integration or a custom app backend that can integrate with the Kindly&trade; bot building framework.
+Build your first chatbot integration using the Kindly&trade; platform.
 
 ## Quick start :rocket:
 
-The fastest way to get started is to just deploy it to Heroku and watch the magic happen.
+The fastest way to get started is to deploy this app to Heroku and watch the :sparkles: magic :sparkles: happen.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/convertelligence/kindly-starterkit-js/tree/master)
+
+You're going to need an API key to complete the deployment.
+
+#### Here's how you get an API key:
+
+1. Go to the [Kindly platform](https://platform.convertelligence.com)
+2. Navigate to your bot
+3. Go to Connect
+4. If you haven't already created an Application, do it now.
+5. Go to the Application you created.
+6. Press "Show API key" and copy the API key to your clipboard.
+7. Paste the API key into the `KINDLY_API_KEY` field.
 
 ## Getting started with local development
 
@@ -18,13 +30,13 @@ cd kindly-starterkit-js
 cp .env.default .env
 ```
 
-### Set your Kindly API key
+### Set up your Kindly API key
 
 Before you continue, open up the `.env` file in your editor.
 
 Set the `KINDLY_API_KEY` value to the API key from your Kindly Application.
 
-Continue the setup process:
+Now that that's taken care of, you're ready to continue the setup process:
 
 ```
 npm install
@@ -34,7 +46,7 @@ npm start
 :tada: If everything went smoothly, you should have a microserver running at
 [http://localhost:9292](http://localhost:9292) that you can use for further testing.
 
-## Using ngrok to develop locally
+### Using ngrok to develop locally
 
 TODO: write about ngrok
 
