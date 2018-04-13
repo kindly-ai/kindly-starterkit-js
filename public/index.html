@@ -1,1 +1,56 @@
-asdfasdfasdf
+<html>
+  <head>
+    <style type="text/css">
+      body {
+        background: #293846;
+        color: #ffffff;
+        font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        -webkit-font-smoothing: antialiased;
+      	-moz-osx-font-smoothing: grayscale;
+      }
+      .welcome {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .welcome h1 {
+        font-weight: 100;
+        font-size: 50px;
+      }
+      .welcome .description {
+        margin-bottom: 40px;
+      }
+      .welcome input {
+        font-size: 35px;
+        text-align: center;
+        border: 3px solid #293846;
+        background: rgba(0, 0, 0, 0.5);
+        width: 900px;
+        color: #fff;
+        outline: none;
+        border: 1px solid #fff;
+        padding: 10px;
+        margin-bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="welcome">
+      <h1>Your Kindly integration is ready!</h1>
+      <div class="description">
+        Paste the URL below into a dialogue Webhook URL to see that it works:
+      </div>
+      <input onClick="this.select()" value="https://your-heroku-url.herokuapp.com/webhook" />
+    </div>
+    <script type="text/javascript">
+      document.getElementsByTagName('input')[0].value = 'https://' + window.location.hostname + '/webhook';
+    </script>
+  </body>
+</html>

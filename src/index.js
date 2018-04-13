@@ -67,7 +67,7 @@ server.route({
   },
 });
 
-// Setup your webserver with a static welcome page
+// Setup your webserver
 const init = async () => {
   await server.register(inert);
 
