@@ -16,7 +16,7 @@ To create an API key, go to the [Kindly platform](https://platform.convertellige
 
 Once the deployment is done, click View app. Copy the URL from the web page and paste it into a dialogue webhook url. Now try to make your chatbot trigger the dialogue by testing it from the platform.
 
-:tada: Congratulations! You've now integrated your first chatbot! :sparkles:
+:tada: Congratulations! You've integrated your first chatbot! :sparkles:
 
 Now [go find an API to integrate](https://github.com/abhishekbanthia/Public-APIs).
 
