@@ -1,12 +1,12 @@
 {
   "name": "Kindly Starter Kit",
-  "description": "Build exciting integrations using the Kindly bot framework!",
+  "description": "Build exciting bot integrations using the Kindly framework!",
   "repository": "https://github.com/convertelligence/kindly-starterkit-js",
   "keywords": ["kindly", "convertelligence", "node"],
   "env": {
     "KINDLY_API_KEY": {
-      "description": "Not a requirement unless you want to build custom apps that integrates with Kindly, such as an SMS bot or IoT device. Get an API key by creating an Application from the Connect page.",
-      "required": false
+      "description": "Required for building Application integrations. Get an API key by creating an Application from the Connect page of your bot.",
+      "required": true
     }
   },
   "success_url": "/"
