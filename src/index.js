@@ -1,11 +1,5 @@
-import Hapi from 'hapi';
-import kindly from 'kindly-js';
-
-const port = process.env.PORT || 9292;
-const host = process.env.HOST || 'localhost';
-const server = Hapi.server({ port, host });
-
-kindly.API_KEY = process.env.KINDLY_API_KEY;
+import server from './server';
+import kindly from './kindly';
 
 server.route({
   method: 'GET',
