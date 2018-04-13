@@ -37,11 +37,11 @@ cd myapp
 heroku local
 ```
 
-Now start `ngrok` so you can tunnel requests from Kindly to your local app. That way you dont need to deploy the app to Heroku every time you make a change.
+Now start `ngrok` so you can tunnel requests from Kindly to your local app:
 
 `ngrok http 9292`
 
-This will give you an ngrok URL that you can use for Kindly webhooks.
+This way you dont need to deploy the app to Heroku every time you make a change. You now have a ngrok URL that you can use to plug in to Kindly dialogues.
 
 ## Getting started for non-Heroku users
 
