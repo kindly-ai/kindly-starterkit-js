@@ -37,7 +37,7 @@ cd myapp
 heroku local
 ```
 
-Now start `ngrok` so you can tunnel requests from Kindly to your local app. That way you dont need to deploy the app to "production" every time you make a change.
+Now start `ngrok` so you can tunnel requests from Kindly to your local app. That way you dont need to deploy the app to Heroku every time you make a change.
 
 `ngrok http 9292`
 
