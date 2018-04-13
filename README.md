@@ -14,7 +14,7 @@ You'll be asked to give the Heroku application a name, select a region (US or Eu
 
 To create an API key, go to the [Kindly platform](https://platform.convertelligence.com). Navigate to your bot. Go to Connect from the sidebar menu. If you haven't already created an Application, do it now. Now go to the Application you created. Press "Show API key" and copy-paste the API into the `KINDLY_API_KEY` field.
 
-Once the deployment is done, click View app. Copy the URL from the web page and paste it into a dialogue webhook url. Now try to make your chatbot trigger the dialogue by testing it from the platform.
+Once the deployment is done, click View app. Copy the URL from the web page and paste it into a dialogue webhook url. Now open the chatbubble and try to make your chatbot trigger the dialogue.
 
 :tada: Congratulations! You've integrated your first chatbot! :sparkles:
 
