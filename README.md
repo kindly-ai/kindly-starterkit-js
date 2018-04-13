@@ -6,8 +6,7 @@ Build your first webhook integration or a custom app backend that can integrate 
 
 The fastest way to get started is to just deploy it to Heroku and watch the magic happen.
 
-* TODO: add deploy to heroku button
-* TODO: add more description
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Getting started with the server
 
