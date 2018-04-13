@@ -16,11 +16,13 @@ To create an API key, go to the [Kindly platform](https://platform.convertellige
 
 Once the deployment is done, click View app. Copy the URL from the web page and paste it into a dialogue webhook url. Now try to make your chatbot trigger the dialogue by testing it from the platform.
 
-:tada: Congratulations! You've now integrated your first chatbot with a third-party service! Now [go find an API to integrate](https://github.com/abhishekbanthia/Public-APIs).
+:tada: Congratulations! You've now integrated your first chatbot with a third-party service!
+
+Now [go find an API to integrate](https://github.com/abhishekbanthia/Public-APIs).
 
 ## Getting started with local development
 
-Open your UNIX terminal and run the following commands
+Open your terminal and run the following commands:
 
 ```
 git clone https://github.com/convertelligence/kindly-starterkit-js.git
