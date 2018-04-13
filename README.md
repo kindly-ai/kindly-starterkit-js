@@ -16,6 +16,10 @@ Open your UNIX terminal and run the following commands
 ```
 git clone https://github.com/convertelligence/kindly-starterkit-js.git
 cd kindly-starterkit-js
+cp .env.default .env
+```
+
+Before you continue, open up the `.env` file in your editor.
 npm install
 npm start
 ```

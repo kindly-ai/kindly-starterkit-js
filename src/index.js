@@ -3,16 +3,8 @@ import kindly from 'kindly-js';
 
 const port = process.env.PORT || 9292;
 const host = process.env.HOST || 'localhost';
-
 const server = Hapi.server({ port, host });
 
-// Set your Kindly API key here.
-// 1. Go to the Kindly platform (platform.convertelligence.com)
-// 2. Go to your bot
-// 3. Go to Connect
-// 4. Create an Application
-// 5. Press "Show API key"
-// 6. Copy-paste the API key here
 kindly.API_KEY = process.env.KINDLY_API_KEY;
 
 server.route({
