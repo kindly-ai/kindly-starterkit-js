@@ -4,13 +4,13 @@ Build your first chatbot integration using the Kindly&trade; platform.
 
 ## Quick start :rocket:
 
-The fastest way to get started is to deploy this app to Heroku and watch the :sparkles: magic :sparkles: happen.
+The fastest way to get started is to deploy this app to Heroku and watch the magic happen. :sparkles:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/convertelligence/kindly-starterkit-js/tree/master)
 
-You're going to need an API key to complete the deployment.
+You're going to need an API key from Kindly to complete the deployment.
 
-#### Here's how you get an API key:
+#### Here's how you get a Kindly API key:
 
 1. Go to the [Kindly platform](https://platform.convertelligence.com)
 2. Navigate to your bot
