@@ -22,36 +22,19 @@ Once the deployment is done, click View app. Copy the URL from the web page and 
 
 Now for the fun part: Come up with an integration idea! [Check out this list](https://github.com/abhishekbanthia/Public-APIs) for tips! :runner:
 
-:bulb: Once you've found the perfect idea for a bot integration, you can clone the source code from your newly created Heroku app by running the following command:
-
-`heroku git:clone -a myapp`
-
-Replace myapp with the name of your Heroku application.
-
-This will create a local directory `myapp` that you can use for further development and testing, as well as add a git remote named `heroku` that you can use to push updates to the live Heroku app.
-
-Go to the new directory and start the application locally:
-
-```
-cd myapp
-heroku local
-```
-
-Now start `ngrok` so you can tunnel requests from Kindly to your local app:
-
-`ngrok http 9292`
-
-This way you dont need to deploy the app to Heroku every time you make a change. You now have a ngrok URL that you can use to plug in to Kindly dialogues.
-
-## Getting started for non-Heroku users
-
-Open your terminal and run the following commands:
+:bulb: Once you've found the perfect idea for a bot integration, you should clone this repo by opening your terminal and running the following commands:
 
 ```
 git clone https://github.com/convertelligence/kindly-starterkit-js.git
 cd kindly-starterkit-js
 cp .env.default .env
 ```
+
+To add your newly created Heroku application as a remote, which will allow you to push updates to the application, run the following command:
+
+`heroku git:remote -a your_heroku_app`
+
+Replace `your_heroku_app` with your Heroku application name.
 
 ### Set up your Kindly API key
 
@@ -67,3 +50,11 @@ npm start
 ```
 
 :tada: If everything went smoothly, you should have a webserver running at [http://localhost:9292](http://localhost:9292) that you can use for further development.
+
+### Using ngrok to develop locally
+
+Start `ngrok` so you can tunnel requests from Kindly to your local app:
+
+`ngrok http 9292`
+
+This way you dont need to deploy the app to Heroku every time you make a change. You now have a ngrok URL that you can use to plug in to Kindly dialogues.
