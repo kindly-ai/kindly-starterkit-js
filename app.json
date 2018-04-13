@@ -1,6 +1,6 @@
 {
   "name": "Kindly Starter Kit",
-  "description": "Build exciting bot integrations using the Kindly framework!",
+  "description": "Build exciting bot integrations using the Kindly framework",
   "repository": "https://github.com/convertelligence/kindly-starterkit-js",
   "keywords": ["kindly", "convertelligence", "node"],
   "env": {
