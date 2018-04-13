@@ -24,7 +24,7 @@ Before you continue, open up the `.env` file in your editor.
 
 Set the `KINDLY_API_KEY` value to the API key from your Kindly Application.
 
-Now continue:
+Continue the setup process:
 
 ```
 npm install
