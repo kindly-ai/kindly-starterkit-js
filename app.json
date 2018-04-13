@@ -1,0 +1,6 @@
+{
+  "name": "Kindly integration app",
+  "description": "A kindly webhooks & app integration application.",
+  "repository": "https://github.com/convertelligence/kindly-starterkit-js",
+  "keywords": ["kindly", "convertelligence", "node"]
+}
