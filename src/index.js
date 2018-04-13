@@ -1,16 +1,20 @@
-import server from './server';
-import kindly from './kindly';
+// Import some required libraries
+import Hapi from 'hapi';
+import inert from 'inert';
+import kindly from 'kindly-js';
 
-server.route({
-  method: 'GET',
-  path: '/',
-  handler: () => 'Your Kindly Starter Kit for Javascript is live',
-});
+// Configure the webserver
+const port = process.env.PORT || 9292;
+const host = process.env.HOST || '0.0.0.0';
+const server = Hapi.server({ port, host });
 
-// Example Webhook from Kindly
+// Set up connection to Kindly
+kindly.API_KEY = process.env.KINDLY_API_KEY;
+
+// Example route: Kindly sends a dialogue webhook to your app
 server.route({
   method: 'POST',
-  path: '/examples/webhook',
+  path: '/webhook',
   handler: (request) => {
     const { payload } = request;
 
@@ -19,29 +23,17 @@ server.route({
 
     // Send back a proper payload to Kindly
     // See https://docs.kindly.ai for more details
-    const jsonResponse = {
-      reply: 'This is an example response from some integration',
-      buttons: [
-        {
-          button_type: 'quick_reply',
-          label: 'Say hi to the bot',
-          value: 'hi',
-        },
-        {
-          button_type: 'link',
-          label: 'Go to Google',
-          value: 'https://www.google.com',
-        },
-      ],
+    return {
+      reply: `You said '${payload.message}'…`,
     };
-    return jsonResponse;
   },
 });
 
-// Example POST request from custom app
+// Example route for Applications:
+// You're app frontend sends a request to this backend app, which sends a query to Kindly.
 server.route({
   method: 'POST',
-  path: '/example/app',
+  path: '/kindly/outgoing/',
   handler: (request) => {
     const { payload } = request;
 
@@ -59,21 +51,34 @@ server.route({
   },
 });
 
-// Example POST webhook response from Kindly to custom app
+// Example route for Applications:
+// Kindly sends a bot response to your app
 server.route({
   method: 'POST',
-  path: '/example/',
+  path: '/kindly/incoming/',
   handler: (request) => {
     const { payload } = request;
 
     console.log('Kindly sent your app the following payload:');
     console.log(payload);
 
-    // Do something with the payload in your own app.
+    // Do something clever with the payload in your own app.
     return {};
   },
 });
 
-server.start();
+// Setup your webserver with a static welcome page
+const init = async () => {
+  await server.register(inert);
 
-console.log(`Server running at: ${server.info.uri}`);
+  server.route({
+    method: 'GET',
+    path: '/',
+    handler: (request, h) => h.file('./public/index.html'),
+  });
+
+  await server.start();
+  console.log(`Server running at: ${server.info.uri}`);
+};
+
+init();

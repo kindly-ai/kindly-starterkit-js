@@ -4,7 +4,7 @@ Build your first chatbot integration using the Kindly&trade; platform.
 
 ## Quick start :rocket:
 
-The fastest way to get started is to deploy this app to Heroku and watch the magic happen. :sparkles:
+The fastest way to get started is to deploy this project to Heroku and watch the magic happen. :sparkles:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/convertelligence/kindly-starterkit-js/tree/master)
 

@@ -25,6 +25,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-runtime": "^6.26.0",
     "hapi": "^17.3.1",
+    "inert": "^5.1.0",
     "kindly-js": "^1.0.4"
   },
   "devDependencies": {

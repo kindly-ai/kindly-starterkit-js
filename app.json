@@ -8,5 +8,6 @@
       "description": "Your Kindly bot API key. Get it by creating an Application from the Connect page.",
       "required": true
     }
-  }
+  },
+  "success_url": "/"
 }
