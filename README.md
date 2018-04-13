@@ -6,7 +6,7 @@ Build your first webhook integration or a custom app backend that can integrate 
 
 The fastest way to get started is to just deploy it to Heroku and watch the magic happen.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/convertelligence/kindly-starterkit-js/tree/master)
 
 ## Getting started with local development
 
