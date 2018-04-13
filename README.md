@@ -9,7 +9,7 @@ The fastest way to get started is to just deploy it to Heroku and watch the magi
 * TODO: add deploy to heroku button
 * TODO: add more description
 
-## Getting started
+## Getting started with the server
 
 Open your UNIX terminal and run the following commands
 
@@ -23,14 +23,16 @@ npm start
 :tada: If everything went smoothly, you should have a microserver running at
 [http://localhost:9292](http://localhost:9292) that you can use for further testing.
 
-See the sections further down for more in-depth guides about building webhooks or app integrations with the Kindly framework.
+## Using ngrok to develop locally
+
+TODO: write about ngrok
 
 ## Building webhook integrations
 
 Check out `src/index.js` in your preferred code editor or IDE.
 
-TODO
+TODO: write about webhook integrations
 
 ## Building app integrations
 
-TODO
+TODO: write about app integrations
