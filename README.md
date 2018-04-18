@@ -46,10 +46,15 @@ Now that that's taken care of, you're ready to continue the setup process:
 
 ```
 npm install
+source .env
 npm start
 ```
 
 :tada: If everything went smoothly, you should have a webserver running at [http://localhost:9292](http://localhost:9292) that you can use for further development.
+
+If you accidentally close your webserver at any point and want to restart it, you can do so by running
+
+`npm start` :+1:
 
 ### Using ngrok to develop locally
 
