@@ -10,6 +10,7 @@ const server = Hapi.server({ port, host });
 
 // Set up connection to Kindly
 kindly.API_KEY = process.env.KINDLY_API_KEY;
+kindly.API_HOST = process.env.KINDLY_HOST;
 
 // Example route: Kindly sends a dialogue webhook to your app
 server.route({
@@ -78,7 +79,13 @@ const init = async () => {
   server.route({
     method: 'GET',
     path: '/',
-    handler: (request, h) => h.file('./public/index.html'),
+    handler: (request, h) => {
+      kindly.greet({
+        user_id: 'Some user token', // User/chat identifier
+      });
+
+      return h.file('./public/index.html');
+    },
   });
 
   await server.start();
