@@ -22,15 +22,9 @@ server.route({
     console.log('Incoming webhook request from Kindly:');
     console.log(payload);
 
-    const replies = [];
-    replies.push('Congratulations! The webhook integration works perfectly!');
-    replies.push('This reply is coming from the source code of your new application.');
-
     // Send back a proper payload to Kindly
     // See https://docs.kindly.ai for more details
-    return {
-      reply: replies.join('\n\n'),
-    };
+    return {};
   },
 });
 
