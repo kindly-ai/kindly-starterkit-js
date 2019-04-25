@@ -13,6 +13,22 @@ const server = Hapi.server({ port, host });
 kindly.API_KEY = process.env.KINDLY_API_KEY;
 kindly.API_HOST = process.env.KINDLY_HOST;
 
+// Example route for Applications:
+// Creating a new user, so that the chatbot remembers you next time
+server.route({
+  method: 'POST',
+  path: '/kindly/new-user/',
+  handler: (request) => {
+    const { payload } = request;
+
+    kindly.creatUser({
+      user: payload
+    });
+
+    return {};
+  },
+});
+
 // Example route: Kindly sends a dialogue webhook to your app
 server.route({
   method: 'POST',
@@ -52,21 +68,6 @@ server.route({
   },
 });
 
-// Example route for Applications:
-// Creating a new user, so that the chatbot remembers you next time
-server.route({
-  method: 'POST',
-  path: '/kindly/new-user/',
-  handler: (request) => {
-    const { payload } = request;
-
-    kindly.creatUser({
-      user: payload
-    });
-
-    return {};
-  },
-});
 
 // Example route for Applications:
 // Kindly sends a bot response to your app
