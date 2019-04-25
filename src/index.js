@@ -3,6 +3,7 @@ import Hapi from 'hapi';
 import inert from 'inert';
 import kindly from 'kindly-js';
 
+
 // Configure the webserver
 const port = process.env.PORT || 9292;
 const host = process.env.HOST || '0.0.0.0';
@@ -28,6 +29,7 @@ server.route({
   },
 });
 
+
 // Example route for Applications:
 // You're app frontend sends a request to this backend app, which sends a query to Kindly.
 server.route({
@@ -44,6 +46,22 @@ server.route({
     kindly.send({
       user_id: 'Some user token', // User/chat identifier
       message: 'Message to bot', // What to ask bot
+    });
+
+    return {};
+  },
+});
+
+// Example route for Applications:
+// Creating a new user, so that the chatbot remembers you next time
+server.route({
+  method: 'POST',
+  path: '/kindly/new-user/',
+  handler: (request) => {
+    const { payload } = request;
+
+    kindly.creatUser({
+      user: payload
     });
 
     return {};
